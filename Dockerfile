@@ -28,6 +28,7 @@ RUN \
 	binutils \
 	git \
 	cmake && \
+ pip install --upgrade pip && \
  pip install requests && \
  pip install requests[security] && \
  pip install requests-cache && \
