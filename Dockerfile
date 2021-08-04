@@ -1,4 +1,4 @@
-FROM linuxserver/nzbget
+FROM linuxserver/nzbget:version-v21.1
 MAINTAINER ullbergm
 
 ARG BUILD_DATE
