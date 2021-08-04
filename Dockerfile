@@ -19,7 +19,6 @@ RUN \
  apk add --no-cache \
 	ffmpeg \
 	py-pip \
-	python-dev \
 	libffi-dev \
 	openssl-dev \
 	build-base \
