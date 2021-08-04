@@ -1,4 +1,4 @@
-FROM linuxserver/nzbget
+FROM linuxserver/nzbget:version-v21.1
 MAINTAINER ullbergm
 
 ARG BUILD_DATE
@@ -19,7 +19,6 @@ RUN \
  apk add --no-cache \
 	ffmpeg \
 	py-pip \
-	python-dev \
 	libffi-dev \
 	openssl-dev \
 	build-base \
@@ -39,7 +38,6 @@ RUN \
  pip install "subliminal<2" && \
  pip install stevedore==1.19.1 && \
  apk del --no-cache \
-	python-dev \
 	libffi-dev \
 	openssl-dev \
 	build-base \
